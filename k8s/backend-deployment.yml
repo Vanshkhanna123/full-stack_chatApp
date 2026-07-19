@@ -17,10 +17,10 @@ spec:
     spec:
       containers:
       - name: chatapp-backend
-        image: trainwithshubham/chatapp-backend:latest
+        image: vanshkhanna/chatapp-backend:latest
         ports:
-        - containerPort: 5001
-        env:
+        - containerPort: 5001 #will see from dockerfile expose 5001
+        env:     #will see from dockerfile env variables
         - name: NODE_ENV
           value: production
         - name: MONGODB_URI
